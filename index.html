@@ -29,7 +29,7 @@
 
         <!-- HOME SECTION-->
         <section>
-            <div class="home">
+            <div class="home" id="home1"> 
                  <img src="SRC/chicago.png" class="chicago">
                  <div class="hometxt">
                 
@@ -43,9 +43,9 @@
         </section>
         
         <!--BAND SECION-->
-        <article class="band" >
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div style="display: flex; flex-direction: column; align-items: center; row-gap: 6vh;">
+        <article class="band" id="band1">
+            <div class="wrap">
+                <div  class="wrap1" >
                     <h2 style="text-align: center; text-decoration: underline;"> THE BAND </h2> 
                     <p style="text-align: center; font-size: smaller;"><i> We love music </i></p>
                     <p class="bandTxt"> Sunt a magni aspernatur pariatur culpa deserunt explicabo perferendis molestiae voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum architecto similique saepe nesciunt dolorem explicabo voluptatum dolorum, maiores, officia tempora nobis eos nostrum odit corrupti. Ad fugiat voluptas mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, veniam. Repellat corporis sapiente possimus aliquam ducimus, ipsam animi in fugit velit assumenda doloribus delectus est consequatur at sunt provident placeat!                    </p>
@@ -75,7 +75,7 @@
 <br>
         <!--TOUR SECTION -->
 
-        <section class="tour">
+        <section class="tour" id="tour1">
             <div class="tourDates">
             <h2  style="color: aliceblue; font-family: 'IBM Plex Sans Arabic', sans-serif;  text-decoration: underline;"> TOUR DATES </h2> <br>
             <p style="color: rgb(180, 184, 187); font-family: 'IBM Plex Sans Arabic', sans-serif;"><i><strong>Remember to book your tickets!</strong></i></p>
@@ -154,7 +154,7 @@
         
         <!-- CONTACT SECTION -->
 
-        <section class="contact" style="background-color: rgb(255, 255, 255);">
+        <section class="contact" id="contact1" style="background-color: rgb(255, 255, 255);">
             <div class="contxt">
                  <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">CONTACT</h1> <br>
                  <p style="color: gray;"><i>Fan? Drop a note!</i></p>
@@ -191,7 +191,7 @@
          
 
 
-        <div class="socialn" style="background-color: rgb(0, 0, 0);">
+        <div class="socialn" id="more1" style="background-color: rgb(0, 0, 0);">
 
           
               <a  href="https://fr-fr.facebook.com/Nirvana"  ><img alt="facebook" class="icon" src="SRC/64x64facebook.png"> </a>
@@ -205,8 +205,34 @@
         </div>
     </div>
 
-
-
+    <div class="alert info">
+        <span class="closebtn">&times;</span>  
+        <h1 style="text-align: center; font-size: smaller;"> <strong>Reproduction of a model from scratch (w/ some changes)</strong> </h1>
+        <ul style="list-style-type: none;">
+    
+            <li style="text-align: center; margin: 10px 0; padding: 10px;">
+               - - - - - - LINK - - - - - -
+            </li>
+    
+            <li>
+              <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" target="_blank" style="color: aliceblue;"> https://www.w3schools.com/w3css/tryw3css_templates_band.htm </a>
+            </li>
+        </ul>
+      </div>
+    
+      <script>
+        document.addEventListener("DOMContentLoaded", function() { //utilisation async meilleure ? 
+    
+    const closeBtn = document.querySelector('.closebtn');
+    closeBtn.addEventListener("click", function() {
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function() {
+        div.style.display = "none";
+      }, 600);
+    });
+    })
+      </script>
     
 </body>
 </html>
