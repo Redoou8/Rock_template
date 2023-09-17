@@ -13,6 +13,7 @@ html {
 
 section{
         margin-top: 1vh;
+        
 }
 
 .container {
@@ -23,6 +24,7 @@ border: none;
 padding: 0%;
 margin: 0;
 }
+
 .choixdates{
 background-color: black;
 color: rgb(255, 255, 255);
@@ -65,46 +67,56 @@ background-color: rgb(188, 189, 190) !important;
 
 
 .home{
-        position: relative;
+         
+position: relative;
 border: none;
 width: 100%;
 display: flex;
 font-family: 'Trebuchet MS';
 color: aliceblue !important;
 font-size: 2rem;
-justify-content: center;
+justify-content: center; 
+align-items: center;     
 }
 
 .hometxt{
         position: absolute;
         bottom: 2%;
+        font-size : 0.8rem;
        }
 
 .chicago{
-        width: 100vw;
+        width: 80%;
 }
 
 .band {
+   
 position: relative;
 display: flex;
-text-align: center;
-justify-content: space-around;
-padding: 5% 20%;   
-font-size: 1rem;     
+justify-content: center;
+padding: 4% 20%;   
+font-size: 1rem;
+text-align: justify;   
+
        }
 
 .bandTxt{
-        margin-bottom: 10%;
+        margin-bottom: 4%;
+        font-size: 0.8rem;
+        width: 50%;
+        font-weight: bold;
+        
 }
 
 .namesbox {
 display: flex;
 justify-content: space-around;
+width: 60%;
 }
 
 .nameP {
 position: relative;
-width: 12vw;
+width: 6vw;
 border-radius: 5px;
 }
 
@@ -188,17 +200,14 @@ max-width: 100%;
 height: auto;
 
 }
-.batmanvideo{
 
-padding: 2% 2% 10%;
-
-}
 .tour{
  display: flex;
 flex-direction: column;
 justify-content: space-around;
 background-color: rgb(0, 0, 0);
 padding: 0% 10%;
+
 }
 
 .tourDates{
